@@ -26,7 +26,7 @@ public class Calculator {
 
     public void div(int value) {
         if (value == 0) {
-            throw new IllegalArgumentException("Dzielenie przez 0 nie jest dozwolone.");
+            throw new IllegalArgumentException("Division by zero is not allowed.");
         }
         state /= value;
     }
