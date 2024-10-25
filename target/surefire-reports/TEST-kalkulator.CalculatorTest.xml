@@ -15,7 +15,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Users\jakub\Downloads\Oracle_JDK-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\jakub\AppData\Local\Temp\surefire13319451062878534947\surefirebooter-20241025141106384_3.jar C:\Users\jakub\AppData\Local\Temp\surefire13319451062878534947 2024-10-25T14-11-06_295-jvmRun1 surefire-20241025141106384_1tmp surefire_0-20241025141106384_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037\surefirebooter-20241025142549251_3.jar C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037 2024-10-25T14-25-49_166-jvmRun1 surefire-20241025142549251_1tmp surefire_0-20241025142549251_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="kalkulator.CalculatorTest"/>
     <property name="surefire.test.class.path" value="C:\repos\java1\target\test-classes;C:\repos\java1\target\classes;C:\Users\jakub\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\jakub\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jakub\AppData\Local\Temp\surefire13319451062878534947\surefirebooter-20241025141106384_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037\surefirebooter-20241025142549251_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testDivMinValueByNegativeOne" classname="kalkulator.CalculatorTest" time="0.003"/>
+  <testcase name="testDivMinValueByNegativeOne" classname="kalkulator.CalculatorTest" time="0.005"/>
   <testcase name="testDivByZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testAddZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByPositive" classname="kalkulator.CalculatorTest" time="0.0"/>
@@ -74,13 +74,13 @@
   <testcase name="testDivMaxValueByMaxValue" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubFromMinValue" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByPositive2" classname="kalkulator.CalculatorTest" time="0.0"/>
-  <testcase name="testMultNegative" classname="kalkulator.CalculatorTest" time="0.001"/>
+  <testcase name="testMultNegative" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubToZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByOne" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testAddOne" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultOneByTwo" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultByLargeNumber" classname="kalkulator.CalculatorTest" time="0.0"/>
-  <testcase name="testAddMinValue" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testAddMinValue" classname="kalkulator.CalculatorTest" time="0.001"/>
   <testcase name="testSubPositive" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubNegative" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubFromMaxValue" classname="kalkulator.CalculatorTest" time="0.0"/>
