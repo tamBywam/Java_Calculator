@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kalkulator.CalculatorTest" time="0.052" tests="26" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kalkulator.CalculatorTest" time="0.053" tests="35" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Users\jakub\Downloads\Oracle_JDK-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037\surefirebooter-20241025142549251_3.jar C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037 2024-10-25T14-25-49_166-jvmRun1 surefire-20241025142549251_1tmp surefire_0-20241025142549251_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jakub\AppData\Local\Temp\surefire17113851154560548250\surefirebooter-20241025151414417_3.jar C:\Users\jakub\AppData\Local\Temp\surefire17113851154560548250 2024-10-25T15-14-14_334-jvmRun1 surefire-20241025151414417_1tmp surefire_0-20241025151414417_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="kalkulator.CalculatorTest"/>
     <property name="surefire.test.class.path" value="C:\repos\java1\target\test-classes;C:\repos\java1\target\classes;C:\Users\jakub\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\jakub\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jakub\AppData\Local\Temp\surefire8259390450330819037\surefirebooter-20241025142549251_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jakub\AppData\Local\Temp\surefire17113851154560548250\surefirebooter-20241025151414417_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -60,30 +60,39 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testDivMinValueByNegativeOne" classname="kalkulator.CalculatorTest" time="0.005"/>
+  <testcase name="testDivMinValueByNegativeOne" classname="kalkulator.CalculatorTest" time="0.003"/>
   <testcase name="testDivByZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testAddZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByPositive" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByNegative" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivResultZero" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testAddOverflow" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testSaveToMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubFromZero" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testDivByMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultByOne" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultByZero" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testAddFromMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultOverflow" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivMaxValueByMaxValue" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubFromMinValue" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testSubFromMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByPositive2" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultNegative" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubToZero" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testMultByMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testMemoryPersistsAfterOperations" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testDivByOne" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testAddOne" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultOneByTwo" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testMultByLargeNumber" classname="kalkulator.CalculatorTest" time="0.0"/>
-  <testcase name="testAddMinValue" classname="kalkulator.CalculatorTest" time="0.001"/>
+  <testcase name="testAddMinValue" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubPositive" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubNegative" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testMemoryIndependentFromState" classname="kalkulator.CalculatorTest" time="0.001"/>
+  <testcase name="testReadFromMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
   <testcase name="testSubFromMaxValue" classname="kalkulator.CalculatorTest" time="0.0"/>
-  <testcase name="testAddLargeNumber" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testClearMemory" classname="kalkulator.CalculatorTest" time="0.0"/>
+  <testcase name="testAddLargeNumber" classname="kalkulator.CalculatorTest" time="0.001"/>
   <testcase name="testAddNegativeNumber" classname="kalkulator.CalculatorTest" time="0.0"/>
 </testsuite>

@@ -137,7 +137,7 @@ public class CalculatorTest {
         Calculator sut = new Calculator();
         sut.setState(Integer.MIN_VALUE);
         sut.sub(1);
-        assertEquals("Integer.MIN_VALUE - 1", Integer.MAX_VALUE, sut.getState()); // Overflow
+        assertEquals("Integer.MIN_VALUE - 1", Integer.MAX_VALUE, sut.getState());
     }
 
     @Test
@@ -208,5 +208,92 @@ public class CalculatorTest {
     public void testDivByZero() {
         Calculator sut = new Calculator();
         sut.div(0);
+    }
+//testy dla operacji z pamieci
+    @Test
+    public void testSaveToMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        assertEquals("Memory should be 5", 5, sut.getMemory());
+    }
+
+    @Test
+    public void testReadFromMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.setState(0);
+        sut.readFromMemory();
+        assertEquals("State should be 5", 5, sut.getState());
+    }
+
+    @Test
+    public void testClearMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.clearMemory();
+        assertEquals("Memory should be 0", 0, sut.getMemory());
+    }
+
+    @Test
+    public void testMemoryPersistsAfterOperations() {
+        Calculator sut = new Calculator();
+        sut.setState(8);
+        sut.saveToMemory();
+        sut.add(10);
+        sut.setState(0);
+        sut.readFromMemory();
+        assertEquals("Memory retains value 8", 8, sut.getState());
+    }
+
+    @Test
+    public void testMemoryIndependentFromState() {
+        Calculator sut = new Calculator();
+        sut.setState(20);
+        sut.saveToMemory();
+        sut.add(5);
+        assertEquals("Memory should still be 20 after state change", 20, sut.getMemory());
+    }
+
+    @Test
+    public void testAddFromMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.setState(3);
+        sut.addFromMemory();
+        assertEquals("3 + 5 = 8", 8, sut.getState());
+    }
+
+    @Test
+    public void testSubFromMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.setState(3);
+        sut.subFromMemory();
+        assertEquals("3 - 5 = -2", -2, sut.getState());
+    }
+
+    @Test
+    public void testMultByMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.setState(3);
+        sut.multByMemory();
+        assertEquals("3 * 5 = 15", 15, sut.getState());
+    }
+
+    @Test
+    public void testDivByMemory() {
+        Calculator sut = new Calculator();
+        sut.setState(5);
+        sut.saveToMemory();
+        sut.setState(15);
+        sut.divByMemory();
+        assertEquals("15 / 5 = 3", 3, sut.getState());
     }
 }
