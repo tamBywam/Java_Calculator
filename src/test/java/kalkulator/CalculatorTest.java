@@ -35,7 +35,7 @@ public class CalculatorTest {
     public void testAddMinValue() {
         Calculator sut = new Calculator();
         sut.setState(Integer.MIN_VALUE);
-        sut.add(-1); // Overflow test
+        sut.add(-1);
         assertEquals("Integer.MIN_VALUE + (-1)", Integer.MAX_VALUE, sut.getState());
     }
 
